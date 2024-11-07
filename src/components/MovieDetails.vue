@@ -28,7 +28,6 @@ export default defineComponent({
 
         const loadMovieDetails = async (id: number): Promise<void> => {
             movie.value = await fetchMovieDetails(id);
-            console.log(movie.value, 'movie.value')
         };
 
         onMounted(() => {
@@ -126,9 +125,6 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    /* .movie-image {
-        height: 300px;
-    } */
 
     h1 {
         font-size: 1.8rem;

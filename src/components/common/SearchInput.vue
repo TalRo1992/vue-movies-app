@@ -7,9 +7,7 @@
         :placeholder="placeholder"
         @input="handleInput"
       />
-      <LoadingSpinner v-if="isLoading" style="right: 0.5rem;"/>
-      <!-- <div v-if="isLoading" class="loading-spinner"></div> -->
-  
+      <LoadingSpinner v-if="isLoading" style="right: 0.5rem;"/>  
       <div v-if="isDropdownVisible && query && results.length" class="search-dropdown">
         <div class="dropdown-item" v-for="(item, index) in results" :key="index" @click="handleItemClick(item)">
           {{ item.title || item.name }}
@@ -85,26 +83,6 @@
   border: 1px solid #ccc;
   font-size: 0.9rem;
 }
-
-/* .loading-spinner {
-  position: absolute;
-  right: 0.5rem; 
-  width: 16px; 
-  height: 16px;
-  border: 2px solid #ccc; 
-  border-top: 2px solid #f5821e;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-} */
-
-/* @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .search-dropdown {
   position: absolute;

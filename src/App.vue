@@ -18,7 +18,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* Ensure full viewport height for the app */
 html, body {
   height: 100%;
   margin: 0;
@@ -28,13 +27,12 @@ html, body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Set the minimum height to the full viewport height */
+  min-height: 100vh;
   text-align: center;
   color: white;
   background: #000000;
 }
 
-/* Header Styling */
 header {
   background-color: #f5821e;
   color: #fff;
@@ -50,9 +48,8 @@ header a {
   font-size: 1.5rem;
 }
 
-/* Main Content Styling */
 main {
-  flex: 1; /* Make main content area take available space */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
