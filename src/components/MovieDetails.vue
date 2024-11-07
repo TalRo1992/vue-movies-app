@@ -1,6 +1,6 @@
 <template>
     <div class="movie-details" v-if="movie">
-        <a :href="movie.homepage" target="_blank" v-if="movie.homepage">
+        <a :href="movie.homepage" target="_blank">
             <div class="movie-image"
                 :style="{ backgroundImage: `url('https://image.tmdb.org/t/p/w500/${movie.poster_path}')` }"></div>
         </a>
